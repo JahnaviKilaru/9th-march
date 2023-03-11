@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		class Student{
+			constructor(stdName,stdEmail){
+				this.stdName=stdName,
+				this.stdEmail=stdEmail
+			}
+			studentSubjectlist=[]//wait
+			getStudentInfo(){
+				return {
+					name:this.stdName,
+					email:this.stdEmail
+				}
+			}
+			addSubject(subName){
+				this.studentSubjectlist.push(subName)
+			}
+			getSubjectsList(){
+				return this.studentSubjectlist
+			}
+		}
+		const studentObj=new Student("jahnavi",
+			"jahnavi@gmail.com")
+		console.log(studentObj.getStudentInfo())
+		studentObj.addSubject("Html")
+		studentObj.addSubject("css")
+		studentObj.addSubject("javascript")
+		console.log(studentObj.getSubjectsList())
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
